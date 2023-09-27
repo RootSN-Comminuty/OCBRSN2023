@@ -1128,14 +1128,14 @@ ol {
 -----------------------*/
 
 .footer-section {
-	background: #171822;
+	background: #050C35;
 	padding-top: 50px;
-	padding-bottom: 60px;
+	padding-bottom: 5px;
 }
 
 .partner-logo {
 	padding-bottom: 50px;
-	border-bottom: 1px solid #2f3039;
+	border-bottom: 1px solid #ebecf1;
 }
 
 .partner-logo .pl-table {
@@ -1193,7 +1193,14 @@ ol {
 .footer-text .copyright-text {
 	font-size: 14px;
 	color: #a0a1b5;
-	margin-top: 50px;
+	margin-top: 100px;
+	margin-bottom: none;
+}
+
+
+.copyright-text {
+	padding-top: 25px;
+	border-top: 1px solid #ebecf1;
 }
 
 .footer-text .copyright-text i {
