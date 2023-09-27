@@ -171,8 +171,8 @@ ol {
 .price-item .tr-tag,
 .schedule-tab .nav-tabs .nav-item .nav-link.active,
 .site-btn {
-	background-image: -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%), -o-linear-gradient(330deg, #ee8425 0%, #f9488b 100%);
-	background-image: linear-gradient(120deg, #ee8425 0%, #f9488b 100%), linear-gradient(120deg, #ee8425 0%, #f9488b 100%);
+	background-image: -o-linear-gradient(330deg, #FEA900 0%, #E21358 100%), -o-linear-gradient(330deg, #FEA900 0%, #E21358 100%);
+	background-image: linear-gradient(120deg, #FEA900 0%, #E21358 100%), linear-gradient(120deg, #FEA900 0%, #E21358 100%);
 }
 
 /* buttons */
@@ -185,9 +185,9 @@ ol {
 	color: #ffffff;
 	text-align: center;
 	border-radius: 50px;
-	background-image: -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b)), -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b));
-	background-image: -o-linear-gradient(left, #ee8425 0%, #f9488b 100%), -o-linear-gradient(left, #ee8425 0%, #f9488b 100%);
-	background-image: linear-gradient(to right, #ee8425 0%, #f9488b 100%), linear-gradient(to right, #ee8425 0%, #f9488b 100%);
+	background-image: -webkit-gradient(linear, left top, right top, from(#FEA900), to(#E21358)), -webkit-gradient(linear, left top, right top, from(#FEA900), to(#E21358));
+	background-image: -o-linear-gradient(left, #FEA900 0%, #E21358 100%), -o-linear-gradient(left, #FEA900 0%, #E21358 100%);
+	background-image: linear-gradient(to right, #FEA900 0%, #E21358 100%), linear-gradient(to right, #FEA900 0%, #E21358 100%);
 }
 
 .site-btn {
@@ -208,7 +208,7 @@ ol {
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #000;
+	background: #050C35;
 }
 
 .loader {
@@ -275,6 +275,8 @@ ol {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	background: #050C35;
+
 }
 
 .header-section.header-normal {
@@ -360,7 +362,7 @@ ol {
 
 .nav-menu .mainmenu ul li a {
 	font-size: 16px;
-	color: #171822;
+	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 600;
 	padding: 42px 0;
@@ -374,7 +376,7 @@ ol {
 	bottom: 36px;
 	height: 2px;
 	width: 100%;
-	background: #F44949;
+	background: #E21358;
 	content: "";
 	opacity: 0;
 	-webkit-transition: all 0.3s;
@@ -405,7 +407,6 @@ ol {
 .hero-section .hero-text span {
 	font-size: 16px;
 	color: #f44949;
-	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
@@ -1416,9 +1417,9 @@ ol {
 }
 
 .testimonial-slider.owl-carousel .owl-nav button:hover {
-	background: -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b));
-	background: -o-linear-gradient(left, #ee8425, #f9488b);
-	background: linear-gradient(to right, #ee8425, #f9488b);
+	background: -webkit-gradient(linear, left top, right top, from(#FEA900), to(#E21358));
+	background: -o-linear-gradient(left, #FEA900, #E21358);
+	background: linear-gradient(to right, #FEA900, #E21358);
 	color: #ffffff;
 }
 
@@ -1533,8 +1534,8 @@ ol {
 }
 
 .speaker-item .si-text .si-social a:hover {
-	background: -o-linear-gradient(330deg, #ee8425, #f9488b);
-	background: linear-gradient(120deg, #ee8425, #f9488b);
+	background: -o-linear-gradient(330deg, #FEA900, #E21358);
+	background: linear-gradient(120deg, #FEA900, #E21358);
 	color: #ffffff;
 }
 
@@ -1661,8 +1662,8 @@ ol {
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover {
-	background: -o-linear-gradient(330deg, #ee8425, #f9488b);
-	background: linear-gradient(120deg, #ee8425, #f9488b);
+	background: -o-linear-gradient(330deg, #FEA900, #E21358);
+	background: linear-gradient(120deg, #FEA900, #E21358);
 }
 
 .schedule-table-tab .schedule-table-content table tbody tr td.hover-bg:hover h5 {
@@ -2213,11 +2214,13 @@ ol {
 
 .comment-form.contact-form input {
 	margin-bottom: 25px;
+	border-radius: 25px;
 }
 
 .comment-form.contact-form textarea {
 	height: 150px;
 	margin-bottom: 42px;
+	border-radius: 25px;
 }
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
