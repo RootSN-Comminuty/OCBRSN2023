@@ -208,7 +208,9 @@ ol {
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	background: #050C35;
+	/* background: #050C35; */
+	background-image: url(../img/bg_Octobre_Cyber.png);
+
 }
 
 .loader {
@@ -397,7 +399,8 @@ ol {
 -----------------------*/
 
 .hero-section {
-	padding-top: 55px;
+	padding-top: 35px;
+	padding-bottom: 35px;
 }
 
 .hero-section .hero-text {
@@ -411,11 +414,20 @@ ol {
 }
 
 .hero-section .hero-text h3 {
-	font-size: 50px;
+	font-size: 48px;
 	color: #ffffff;
 	line-height: 72px;
 	font-weight: 600;
 	margin-top: 24px;
+	margin-bottom: 3px;
+}
+
+.hero-section .hero-text h4 {
+	font-size: 18px;
+	color: #ffffff;
+	line-height: 52px;
+	font-weight: 600;
+	margin-top: 0px;
 	margin-bottom: 35px;
 }
 
