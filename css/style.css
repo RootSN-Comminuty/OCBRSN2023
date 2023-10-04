@@ -500,7 +500,7 @@ ol {
 -----------------------*/
 
 .home-about-section {
-	padding-bottom: 90px;
+	padding-bottom: 200px;
 }
 
 .ha-pic {
@@ -567,6 +567,7 @@ ol {
 
 .team-member-section {
 	overflow: hidden;
+	margin-bottom: 100px;
 }
 
 .member-item {
@@ -1159,6 +1160,11 @@ ol {
 	display: table-cell;
 	vertical-align: middle;
 	height: 41px;
+}
+
+.partner-logo .pl-table .pl-tablecell img {
+	height: 90px;
+	width: 90px;
 }
 
 .footer-text {
