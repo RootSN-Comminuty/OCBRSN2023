@@ -431,6 +431,13 @@ ol {
 	margin-bottom: 35px;
 }
 
+.middle {
+	margin-top: 120px;
+	margin-bottom: 250px;
+	animation: oscille 5s linear infinite;
+}
+
+
 /*---------------------
   Conter
 -----------------------*/
