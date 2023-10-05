@@ -208,8 +208,8 @@ ol {
 	top: 0;
 	left: 0;
 	z-index: 999999;
-	/* background: #050C35; */
-	background-image: url(../img/bg_Octobre_Cyber.png);
+	background: #050C35;
+	/* background-image: url(../img/bg_Octobre_Cyber.png); */
 
 }
 
@@ -745,7 +745,7 @@ ol {
 	position: absolute;
 	right: -18px;
 	top: 0;
-	content: "/";
+	content: "";
 }
 
 .schedule-tab .st-content .sc-text ul li i {
@@ -1081,7 +1081,7 @@ ol {
 
 .cs-text .ct-address span {
 	font-size: 16px;
-	color: #6a6b7c;
+	color: #E21358;
 }
 
 .cs-text .ct-address p {
@@ -1110,13 +1110,13 @@ ol {
 
 .cs-text ul li span {
 	font-size: 16px;
-	color: #6a6b7c;
+	color: #E21358;
 	display: block;
 }
 
 .cs-text .ct-links span {
 	font-size: 16px;
-	color: #6a6b7c;
+	color: #E21358;
 }
 
 .cs-text .ct-links p {
