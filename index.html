@@ -1332,7 +1332,8 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
 
-
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script>
         // Typed Js script
@@ -1344,6 +1345,37 @@
             loop: true
 
         });
+
+
+        const sr = ScrollReveal({
+            distance: '0px',
+            duration: 2500,
+            reset: true
+        });
+
+        //Section Counter
+        sr.reveal('.counter-section .counter-text', {
+            delay: 200,
+            origin: 'left',
+            distance: '90px'
+        })
+        sr.reveal('.counter-section .cd-timer', {
+            delay: 200,
+            origin: 'right',
+            distance: '90px'
+        })
+
+        //Section About
+        sr.reveal('.home-about-section .ha-pic', {
+            delay: 200,
+            origin: 'top',
+            distance: '110px'
+        })
+        sr.reveal('.home-about-section .ha-text', {
+            delay: 200,
+            origin: 'bottom',
+            distance: '110px'
+        })
     </script>
 </body>
 
