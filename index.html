@@ -741,14 +741,14 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="latest-item set-bg" data-setbg="img/ocobre_cyber.png">
+                    <div class="latest-item set-bg lastest-left" data-setbg="img/ocobre_cyber.png">
                         <div class="li-tag">Webinaire</div>
                         <div class="li-text">
                             <h5><a href="#"></a></h5>
                             <span><i class=""></i></span>
                         </div>
                     </div>
-                    <div class="latest-item set-bg" data-setbg="img/ocobre_cyber.png">
+                    <div class="latest-item set-bg lastest-left" data-setbg="img/ocobre_cyber.png">
                         <div class="li-tag">Formation</div>
                         <div class="li-text">
                             <h5><a href="#"></a></h5>
@@ -847,7 +847,7 @@
     <!-- Newslatter Section -->
     <section class="newslatter-section about-newslatter">
         <div class="container">
-            <div class="newslatter-inner set-bg" data-setbg="img/newslatter-bg.jpg">
+            <div class="newslatter-inner set-bg" data-setbg="img/bg_Octobre_Cyber.png">
                 <div class="ni-text">
                     <h3>Newsletter</h3>
                     <p>Inscrivez-vous pour recevoir des nouvelles de OCBRSN2023</p>
@@ -865,7 +865,7 @@
     <section class="contact-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-6 left">
                     <div class="section-title">
                         <h2>Nos Coordonnées</h2>
                     </div>
@@ -893,7 +893,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 right">
                     <div class="cs-map">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123488.80135216066!2d-17.548227413600543!3d14.71117593969173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172f5b3c5bb71%3A0xb17c17d92d5db21f!2sDakar%2C%20Senegal!5e0!3m2!1sen!2sbd!4v1695774845942!5m2!1sen!2sbd"
@@ -1106,12 +1106,41 @@
             distance: '110px'
         })
 
-        //Section Speackers
+        //Section Programs
         sr.reveal('.schedule-section .schedule-tab', {
             delay: 200,
             origin: 'top',
             distance: '110px'
         })
+        //Section Blogs
+        sr.reveal('.latest-blog .large-item', {
+            delay: 200,
+            origin: 'left',
+            distance: '90px'
+        })
+        sr.reveal('.latest-blog .lastest-left', {
+            delay: 200,
+            origin: 'right',
+            distance: '90px'
+        })
+        //Section Testimonial
+        sr.reveal('.testimonial-section .testimonial-slider', {
+            delay: 200,
+            origin: 'top',
+            distance: '110px'
+        })
+        //Section Contact
+        sr.reveal('.contact-section .left', {
+            delay: 200,
+            origin: 'left',
+            distance: '70px'
+        })
+        sr.reveal('.contact-section .right', {
+            delay: 200,
+            origin: 'right',
+            distance: '70px'
+        })
+
     </script>
 </body>
 
