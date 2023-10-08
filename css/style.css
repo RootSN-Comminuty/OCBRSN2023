@@ -1123,12 +1123,20 @@ ol {
 	color: #111111;
 }
 
-.cs-text .ct-links p {
+.cs-text .call {
 	font-size: 18px;
 	color: #171822;
 	line-height: 30px;
 	margin-top: 8px;
 }
+
+.cs-text .ct-links p a {
+	font-size: 18px;
+	color: #171822;
+	line-height: 30px;
+	margin-top: 8px;
+}
+
 
 .cs-map {
 	height: 400px;
