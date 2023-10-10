@@ -37,7 +37,7 @@ body {
 	height: 100%;
 	font-family: "Work Sans", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-smoothing: antialiased;
+	font-smooth: antialiased;
 }
 
 h1,
@@ -163,6 +163,7 @@ ol {
 .bg-gradient,
 .bd-text .bd-tag-share .s-share a:hover,
 .bh-text .play-btn,
+.bi-text .play-btn,
 .schedule-table-tab .nav-tabs .nav-item .nav-link.active,
 .newslatter-inner .ni-form button,
 .latest-item .li-tag,
@@ -287,7 +288,7 @@ ol {
 
 .logo {
 	float: left;
-	padding-top: 10px;
+	transform: translateY(8px);
 }
 
 .logo a {
@@ -958,6 +959,17 @@ ol {
 	position: absolute;
 	left: 30px;
 	top: 30px;
+	animation: zoom infinite 2s ease-in-out;
+}
+
+@keyframes zoom {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
 }
 
 .latest-item .li-text {
@@ -1082,7 +1094,8 @@ ol {
 
 .cs-text .ct-address span {
 	font-size: 16px;
-	color: #E21358;
+	font-weight: 600;
+	color: #111111;
 }
 
 .cs-text .ct-address p {
@@ -1111,21 +1124,31 @@ ol {
 
 .cs-text ul li span {
 	font-size: 16px;
-	color: #E21358;
+	font-weight: 600;
+	color: #111111;
 	display: block;
 }
 
 .cs-text .ct-links span {
 	font-size: 16px;
-	color: #E21358;
+	font-weight: 600;
+	color: #111111;
 }
 
-.cs-text .ct-links p {
+.cs-text .call {
 	font-size: 18px;
 	color: #171822;
 	line-height: 30px;
 	margin-top: 8px;
 }
+
+.cs-text .ct-links p a {
+	font-size: 18px;
+	color: #171822;
+	line-height: 30px;
+	margin-top: 8px;
+}
+
 
 .cs-map {
 	height: 400px;
@@ -1804,6 +1827,10 @@ ol {
 	text-align: center;
 }
 
+.bi-text {
+	text-align: center;
+}
+
 .bh-text .play-btn {
 	height: 70px;
 	width: 70px;
@@ -1817,6 +1844,33 @@ ol {
 	color: #ffffff;
 	font-size: 28px;
 	margin-left: 6px;
+	animation: zoomm infinite 2s ease-in-out;
+}
+
+.bi-text .play-btn {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 59px;
+}
+
+.bi-text .play-btn i {
+	color: #ffffff;
+	font-size: 28px;
+	margin-left: 6px;
+	animation: zoomm infinite 2s ease-in-out;
+}
+
+@keyframes zoomm {
+	0% {
+		transform: scale(1.3);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
 }
 
 .bh-text h2 {
