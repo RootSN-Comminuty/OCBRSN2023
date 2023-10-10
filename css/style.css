@@ -163,6 +163,7 @@ ol {
 .bg-gradient,
 .bd-text .bd-tag-share .s-share a:hover,
 .bh-text .play-btn,
+.bi-text .play-btn,
 .schedule-table-tab .nav-tabs .nav-item .nav-link.active,
 .newslatter-inner .ni-form button,
 .latest-item .li-tag,
@@ -1826,6 +1827,10 @@ ol {
 	text-align: center;
 }
 
+.bi-text {
+	text-align: center;
+}
+
 .bh-text .play-btn {
 	height: 70px;
 	width: 70px;
@@ -1839,6 +1844,33 @@ ol {
 	color: #ffffff;
 	font-size: 28px;
 	margin-left: 6px;
+	animation: zoomm infinite 2s ease-in-out;
+}
+
+.bi-text .play-btn {
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	line-height: 59px;
+}
+
+.bi-text .play-btn i {
+	color: #ffffff;
+	font-size: 28px;
+	margin-left: 6px;
+	animation: zoomm infinite 2s ease-in-out;
+}
+
+@keyframes zoomm {
+	0% {
+		transform: scale(1.3);
+	}
+
+	100% {
+		transform: scale(1.1);
+	}
 }
 
 .bh-text h2 {
