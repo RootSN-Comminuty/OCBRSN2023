@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 left">
                             <div class="blog-item set-bg" data-setbg="img/speakers/PHOTO-2023-10-04-17-47-23.jpg">
                                 <div class="bi-tag bg-gradient">Webinaire</div>
                                 <div class="bi-text">
@@ -102,7 +102,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 right">
                             <div class="blog-item set-bg" data-setbg="img/speakers/PHOTO-2023-10-05-13-07-39.jpg">
                                 <div class="bi-tag bg-gradient">Webinaire</div>
                                 <div class="bi-text">
@@ -113,7 +113,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="blog-item set-bg large-item" data-setbg="img/speakers/PHOTO-2023-10-05-10-10-04.jpg">
+                    <div class="blog-item set-bg large-item left"
+                        data-setbg="img/speakers/PHOTO-2023-10-05-10-10-04.jpg">
                         <div class="bi-tag bg-gradient">Webinaire</div>
                         <div class="bi-text">
                             <a href="" class="play-btn video-popup"><i class="fa fa-play"></i></a>
@@ -144,7 +145,8 @@
                     </div> -->
                 </div>
                 <div class="col-lg-6">
-                    <div class="blog-item set-bg large-item" data-setbg="img/speakers/PHOTO-2023-10-08-23-14-20.jpg">
+                    <div class="blog-item set-bg large-item top"
+                        data-setbg="img/speakers/PHOTO-2023-10-08-23-14-20.jpg">
                         <div class="bi-tag bg-gradient">Webinaire</div>
                         <div class="bi-text">
                             <a href="" class="play-btn video-popup"><i class="fa fa-play"></i></a>
@@ -153,7 +155,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 left">
                             <div class="blog-item set-bg" data-setbg="img/speakers/PHOTO-2023-10-10-11-54-52.jpg">
                                 <div class="bi-tag bg-gradient">Webinaire</div>
                                 <div class="bi-text">
@@ -163,7 +165,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 right">
                             <div class="blog-item set-bg" data-setbg="img/speakers/PHOTO-2023-10-11-11-54-52.jpg">
                                 <div class="bi-tag bg-gradient">Webinaire</div>
                                 <div class="bi-text">
@@ -325,7 +327,8 @@
     </footer>
     <!-- Footer Section End -->
 
-
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -334,6 +337,50 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        const sr = ScrollReveal({
+            distance: '60px',
+            duration: 2000,
+            reset: true
+        });
+
+
+        sr.reveal('.blog-section .left', {
+            delay: 200,
+            origin: 'left',
+            distance: '60px'
+        })
+        sr.reveal('.blog-section .right', {
+            delay: 200,
+            origin: 'right',
+            distance: '60px'
+        })
+
+
+        sr.reveal('.blog-section .top', {
+            delay: 200,
+            origin: 'top',
+            distance: '60px'
+        })
+        sr.reveal('.blog-section .bottom', {
+            delay: 200,
+            origin: 'bottom',
+            distance: '60px'
+        })
+
+
+        sr.reveal('.team-member-section .left', {
+            delay: 200,
+            origin: 'left',
+            distance: '60px'
+        })
+        sr.reveal('.team-member-section .right', {
+            delay: 200,
+            origin: 'right',
+            distance: '60px'
+        })
+    </script>
 </body>
 
 </html>
