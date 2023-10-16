@@ -1,12 +1,3 @@
-/*  ---------------------------------------------------
-    Template Name: Manup
-    Description: Manup Event HTML Template
-    Author: Colorlib
-    Author URI: http://colorlib.com
-    Version: 1.0
-    Created: Colorlib
----------------------------------------------------------  */
-
 'use strict';
 
 (function ($) {
@@ -89,8 +80,31 @@
         Magnific Popup
     --------------------*/
     $('.video-popup').magnificPopup({
-        type: 'iframe'
-    });
+    type: 'iframe',
+    iframe: {
+        patterns: {
+            youtube: {
+                index: 'youtube.com/', 
+                id: function(url) {        
+                    var m = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+                    if ( !m || !m[1] ) return null;
+                    return m[1];
+                },
+                src: '//www.youtube.com/embed/%id%?autoplay=1'
+            },
+            vimeo: {
+                index: 'vimeo.com/', 
+                id: function(url) {        
+                    var m = url.match(/(https?:\/\/)?(www.)?(player.)?vimeo.com\/([a-z]*\/)*([0-9]{6,11})[?]?.*/);
+                    if ( !m || !m[5] ) return null;
+                    return m[5];
+                },
+                src: '//player.vimeo.com/video/%id%?autoplay=1'
+            }
+        }
+    }
+});
+
 
     /*------------------
         CountDown
@@ -136,3 +150,4 @@
 
 
 })(jQuery);
+
